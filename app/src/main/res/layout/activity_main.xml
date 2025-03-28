@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- TextView hiển thị biểu tượng tiền tệ nguồn (sẽ thay đổi trong code) -->
+        <TextView
+            android:id="@+id/tvSymbolFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="32sp"
+            android:layout_marginRight="16dp" />
+
+        <!-- EditText để nhập số tiền nguồn -->
+        <EditText
+            android:id="@+id/etAmountFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textSize="24sp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <!-- Spinner để chọn loại tiền tệ nguồn -->
+    <Spinner
+        android:id="@+id/spinnerFromCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/tvSymbolTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="đ"
+            android:textSize="32sp"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvAmountTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/spinnerToCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+
+    <TextView
+        android:id="@+id/tvExchangeRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 USD = 23,185.00 VND"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyển đổi"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
